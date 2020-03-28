@@ -1128,6 +1128,7 @@ font-size: 21px;
     font-size: 21px;
   }
   .on1{
+    bottom: 0px;
     justify-content: space-around;
   }
   .flex3{
@@ -1296,5 +1297,21 @@ font-size: 21px;
   }
   .foo3{
     width: 100%;
+  }
+  .img8{
+    height: 175px;
+  }
+  .on1{
+    flex-direction: column;
+    bottom: 20px;
+    padding-left: 20px;
+    
+  }
+  .cooperation{
+    width: auto;
+  }
+  .btn3{
+    align-self: flex-start;
+    
   }
 }
