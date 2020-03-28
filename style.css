@@ -758,6 +758,7 @@ time:nth-child(11){
   max-width: 486px;
   border-bottom:1px solid #A0B4C4;
   padding-bottom: 5px;
+  white-space: nowrap;
 }
 .fo-head::before{
   content: url(images/Group\ 986.png);
