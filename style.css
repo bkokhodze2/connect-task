@@ -230,7 +230,7 @@ header{
   margin-right: 7px;
 }
 .btn1::before{
-  content:url(/images/left.png);
+  content:url(images/left.png);
 }
 .btn2::before{
   content:url(images/right.png);
