@@ -447,6 +447,7 @@ time:nth-child(11){
   display: flex;
   justify-content: space-between;
   margin-top: 178px;
+  
 }
 .legal{
   width: 427px;
@@ -457,10 +458,9 @@ time:nth-child(11){
   text-align: start;
   color: #091F40;
   white-space: nowrap;
+  
 }
-.legal>p{
 
-}
 
 .list{
   max-width: 1518px;
@@ -1192,9 +1192,26 @@ font-size: 21px;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .signup{
-    margin-right: 5px;
+    margin-right: 10px;
     align-content: center;
   }
+  .search{
+    margin-right: 10px;
+  }
+  .search::before{
+    margin-left: 10px;
+  }
+  .ge{
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .ge::after{
+    margin-right: 10px;
+  }
+  .dis0{
+    margin-left: 5px;
+  }
+
   .container{
     max-width: 279px;
   }
