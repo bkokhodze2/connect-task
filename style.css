@@ -10,7 +10,7 @@ a{
 .nav{
   width: 85%;
   margin:0 auto;
-  height: 180px;
+  height: 250px;
   display: flex;   
   flex-direction: row;
   justify-content: flex-end;
@@ -28,6 +28,11 @@ a{
   align-content: center;
   align-self: center;
   align-items: center;
+  transition: .3s;
+}
+.div-top >a:hover{
+  border-bottom: 1px solid #091F40;
+  
 }
 .flex>div{
   border-right: 1px solid rgba(9, 31, 64, 0.10);
@@ -39,6 +44,7 @@ a{
 .flex{
   margin-right: 50px;
   display: flex;
+  margin-top: 0px;
 }
 .font{
   white-space: nowrap;
@@ -57,6 +63,10 @@ a{
 }
 .search{
   margin-right: 22px;
+}
+.borderno{
+  border:0px;
+  outline:0px;
 }
 .search::before{
   content: url(images/Path\ 640.png);
@@ -318,12 +328,17 @@ time:nth-child(11){
   border-radius: 8px;
   margin-bottom: 40px;
   cursor: pointer;
+  transition: .3s;
  }
-.on >button > a{
-  font-size: 13px;
-  font-weight: bold;
-  font-family: 'Noto Sans Georgian', sans-serif;
-  color: #fff;
+ .on >button > a{
+   font-size: 13px;
+   font-weight: bold;
+   font-family: 'Noto Sans Georgian', sans-serif;
+   color: #fff;
+  }
+ .on > button:hover {
+  background-color: #091F40;
+  transform: scale(1.2);
  }
 .on > p{
   max-width: 440px;
@@ -388,6 +403,10 @@ time:nth-child(11){
   cursor: pointer;
   outline-style:none;
   box-shadow:none;
+  transition: .3s;
+}
+.btn-see:hover{
+  background-color: #A0B4C4;
 }
 .btn-see > a{
   color: #091F40;
@@ -514,6 +533,11 @@ time:nth-child(11){
   border-radius: 30px;
   margin-right: 110px;
   cursor: pointer;
+  transition: .3s;
+}
+.download>button:hover{
+  background-color: #A0B4C4;
+  transition: .3s;
 }
 .download> button >a {
   color: #D31E43;
@@ -540,6 +564,13 @@ time:nth-child(11){
   cursor: pointer;
   outline-style:none;
   box-shadow:none;
+  transition: .3s;
+}
+.btn4 >button:hover{
+  transform: scale(1.2);
+  background-color: #091F40;
+  color: #fff;
+  transition: .3s;
 }
 .shrink-width{
   width: 305px;
@@ -664,6 +695,10 @@ time:nth-child(11){
   border-radius: 8px;
   margin-right: 21px;
   cursor: pointer;
+  transition: .3s;
+}
+.btn-sign:hover{
+  transform: scale(1.2);
 }
 .btn-sign > a{
   font-size: 13px;
@@ -683,6 +718,10 @@ time:nth-child(11){
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
+  transition: .3s;
+}
+.btn-reg:hover{
+  transform: scale(1.2);
 }
 .btn-reg >a {
   font-size: 13px;
@@ -802,15 +841,19 @@ time:nth-child(11){
 .you{
   margin-left: 16px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .fb{
   margin-right: 10px;
+  cursor: pointer;
 }
 .ins{
   margin-right: 10px;
+  cursor: pointer;
 }
 .tw{
   margin-right: 10px;
+  cursor: pointer;
 }
 .foo-bottom{
   display: flex;
@@ -863,7 +906,6 @@ time:nth-child(11){
   .div-top{
     order: 2;
     justify-content: flex-end;
-    margin-right: 20px;
     align-self: flex-end;
   }
   .div-top>a{
@@ -1007,9 +1049,32 @@ time:nth-child(11){
   }
   .div-top {
     visibility: hidden;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .flex{
+  margin-top:20px ;
   }
   .dis0{
     visibility: visible;
+  }
+  .show{
+    visibility: visible;
+  }
+  .div-top >a{
+    margin-bottom:10px;
+    width: 100px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    transition: .3s;
+  }
+  .div-top a:hover{
+    transform: scale(1.5);
+    border-bottom: 2px solid #1f4e75;
+    transition: .3s;
   }
   .container{
     max-width: 580px;
@@ -1255,3 +1320,4 @@ time:nth-child(11){
     align-self: flex-start;
   }
 }
+
