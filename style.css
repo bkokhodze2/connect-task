@@ -97,6 +97,7 @@ header{
   font-size: 10px;
   color: #001424;
   font-family: 'Noto Sans Georgian', sans-serif;
+  position: relative;
 }
 .span1{
   width: 24px;
@@ -110,7 +111,8 @@ header{
   border-radius: 2px;
   background-color: #C50033;
   margin-top: 3px;
-
+  
+  
 }
 
 .title{
@@ -264,6 +266,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  position: relative;
 }
 time:nth-child(n+2):nth-child(-n+7) {
   opacity:30%;
@@ -287,7 +291,10 @@ time:nth-child(11){
   font-size: 34px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+
+  align-items: center;
 }
+
 .structure{
   margin-top: 196px;
 }
@@ -554,6 +561,7 @@ time:nth-child(11){
   display: flex;
   justify-content: center;
   margin-top: 60px;
+ 
 }
 .btn4 >button{
   width: 121px;
@@ -565,6 +573,9 @@ time:nth-child(11){
   font-size: 13px;
   font-family: 'Noto Sans Georgian', sans-serif;
   font-weight: bold;
+   cursor: pointer;
+   outline-style:none;
+   box-shadow:none;
 }
 .shrink-width{
   width: 305px;
@@ -690,6 +701,7 @@ time:nth-child(11){
   border: 1px solid #ECF0F1;
   border-radius: 8px;
   margin-right: 21px;
+  cursor: pointer;
 }
 .btn-sign > a{
   font-size: 13px;
@@ -709,6 +721,7 @@ time:nth-child(11){
   background-color: #D31E43;
   border: 1px solid transparent;
   border-radius: 8px;
+  cursor: pointer;
 }
 .btn-reg >a {
   font-size: 13px;
@@ -1044,7 +1057,8 @@ font-size: 21px;
 }
 
 @media screen and (max-width: 768px){
-  .nav{
+  .flex>div:nth-child(4){
+    border-right:none;
   }
   .div-top {
     visibility: hidden;
@@ -1177,6 +1191,10 @@ font-size: 21px;
   }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .signup{
+    margin-right: 5px;
+    align-content: center;
+  }
   .container{
     max-width: 279px;
   }
