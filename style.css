@@ -842,11 +842,13 @@ font-size: 21px;
 }
 .foo-bottom{
   display: flex;
+  margin-top: 14px;
 }
 .connect{
   vertical-align: middle;
   align-self: flex-end;
 }
+
 .foo1{
   color: #032B4B;
   margin-right: 35px;
@@ -863,6 +865,7 @@ font-size: 21px;
   font-size: 13px;
   font-weight: bold;
   font-family: 'Noto Sans Georgian', sans-serif;
+  
 }
 .foo3{
   color: #032B4B;
@@ -870,6 +873,12 @@ font-size: 21px;
   font-size: 13px;
   font-weight: bold;
   font-family: 'Noto Sans Georgian', sans-serif;
+  white-space: nowrap;
+}
+.foo-in{
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .nav{
