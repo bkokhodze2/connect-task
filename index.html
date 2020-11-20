@@ -72,8 +72,8 @@
       <div class="textarea">
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-deley="150"
+          data-aos-duration="700"
+          data-aos-delay="50"
           class="text"
         >
           <p>
@@ -99,8 +99,8 @@
         </div>
         <div
           data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-deley="150"
+          data-aos-duration="700"
+          data-aos-delay="50"
           class="text text_id"
         >
           <p>
@@ -121,7 +121,7 @@
               fermentum. Sed dapibus pulvinar nibh tempor porta.
             </span>
           </p>
-          <button onclick="show2()" class="btn_show" id="showbtn2">
+          <button onclick="show2()" class="btn_show " id="showbtn2">
             Read more
           </button>
         </div>
@@ -138,7 +138,7 @@
       <div
         data-aos="flip-up"
         data-aos-duration="1000"
-        data-aos-deley="50"
+        data-aos-delay="100"
         class="tabsjs"
       >
         <div class="tab">
@@ -276,7 +276,12 @@
           <p>Structure & Team</p>
         </div>
         <div class="srtucture_container">
-          <div class="structure_container_img container_img_first">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="700"
+            class="structure_container_img container_img_first"
+          >
             <img src="images/working-in-office-PDXES46.png" alt="picture" />
             <div class="structure_absolute">
               <h3>Structure</h3>
@@ -284,11 +289,16 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui
                 nulla
               </p>
-              <button><a href="#">Discover more</a></button>
+              <button class="btn_hover" ><a href="#">Discover more</a></button>
             </div>
           </div>
 
-          <div class="structure_container_img container_img_second">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="700"
+            class="structure_container_img container_img_second"
+          >
             <img
               src="images/team-working-on-project-P7YHVBT.png"
               alt="picture"
@@ -299,7 +309,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui
                 nulla
               </p>
-              <button><a href="#">Discover more</a></button>
+              <button class="btn_hover"  ><a href="#">Discover more</a></button>
             </div>
           </div>
         </div>
@@ -319,16 +329,17 @@
         <div class="absolute_cooperation">
           <p>International Cooperation</p>
         </div>
-        <div class="btn3">
-          <button class="btn-see">
+        <div class="cooperation_btn_div">
+          <button class="btn_hover btn-see">
             <a href="#">See more</a>
+            <i class="fas fa-arrow-circle-right"></i>
           </button>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="brand_container">
+      <div data-aos="zoom-in" data-aos-delay="300" class="brand_container">
         <div class="brand_col1">
           <div class="brand_img">
             <i class="fab fa-facebook-square"></i>
@@ -364,7 +375,7 @@
         <div class="legal">
           <p>Legal documents</p>
         </div>
-        <div class="btn3">
+        <div class="">
           <button class="btn-see">
             <a href="#">View All</a>
           </button>
@@ -477,7 +488,7 @@
         <div class="legal shrink-width">
           <p>Latest News</p>
         </div>
-        <div class="btn3">
+        <div class="">
           <button class="btn-see">
             <a href="#">View All</a>
           </button>
@@ -533,39 +544,45 @@
         </div>
       </div>
     </div>
-    <div class="become">
+
+    <div class="container_become">
       <div class="img-become">
         <img
-          class="imgbecome"
+          class=""
           src="images/image-from-rawpixel-id-430576-jpeg.png"
           alt="picture"
         />
       </div>
-      <div class="div-become">
-        <div class="div-shrink">
-          <div class="div-left">
-            <p class="div-left1">Become a Member</p>
-            <p class="div-left2">
+      <div  class="absolute_become_container">
+        <div class="become_container_inner">
+          <div class="inner_text">
+            <h3 class="text_title">Become a Member</h3>
+            <p class="text_info">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
+
           <div class="buttons">
-            <div class="sign-in">
-              <button class="btn-sign">
-                <a href="#">Sign in</a>
-              </button>
-            </div>
-            <div>
-              <button class="btn-reg">
-                <a href="#">Registration</a>
-              </button>
-            </div>
+            <button class="btn_hover btn-sign">
+              <a href="#">Sign in </a> <i class="far fa-user"></i>
+            </button>
+
+            <button class="btn_hover btn-reg">
+              <a href="#">Registration </a>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- 
+
+      
+       -->
+
     <footer>
       <div class="container">
         <div class="fo-flex">
