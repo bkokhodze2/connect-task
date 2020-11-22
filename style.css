@@ -254,6 +254,7 @@ a {
   text-align: justify;
   text-align-last: center;
   margin-bottom: 1rem;
+  
 }
 .btn_latest {
   background-color: #d31e43;
@@ -470,7 +471,6 @@ time:nth-child(11) {
 }
 
 .container_img_second {
-  
 }
 .container_img_second img {
   object-fit: cover;
@@ -652,9 +652,7 @@ time:nth-child(11) {
   width: 100%;
   font-family: helvetica, sans-serif;
   margin-top: 9rem;
-  border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #ccc;
 }
 .accordeon-title {
   background-color: #f1f1f1;
@@ -666,38 +664,42 @@ time:nth-child(11) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: .5s linear;
+  transition: 0.3s linear;
+  border: 1px solid #ccc;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+  /* border-top: 1px solid #ccc; */
 }
 .accordeon-title:hover.accordeon-title {
-  letter-spacing: 1px;
-  background-color: #00143C;
+  
+  background-color: #00143c;
   color: white;
 }
-.hover_accordion_active{
-  letter-spacing: 1px;
-  background-color:#00143C;;
+.hover_accordion_active {
+  
+  background-color: #00143c;
   color: white;
   margin-top: 1rem;
-  transition: .5s linear;
-  
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  transition: 0.5s linear;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.hover_accordion_content_active{
+.hover_accordion_content_active {
   margin-bottom: 1rem;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .accordeon-title:after {
-
   content: "+";
   display: flex;
   font-size: 1.2em;
   color: #f2f2f2;
   border: 1px solid #d31e43;
   background-color: #d31e43;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   align-items: center;
   justify-content: center;
@@ -907,6 +909,7 @@ time:nth-child(11) {
 }
 .text_info {
   line-height: 24px;
+  font-size: 20px;
   text-align: justify;
   display: flex;
   text-align-last: center;
@@ -1244,6 +1247,30 @@ time:nth-child(11) {
 }
 
 @media screen and (max-width: 1024px) {
+  .accordeon {
+    border: none;
+    overflow: visible;
+  }
+  .accordeon-title {
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+  }
+  .accordeon-content {
+    font-size: 15px;
+    padding: 0.5rem 2rem;
+  }
+  .accordeon-title:after {
+    min-width: 30px;
+    height: 30px;
+  }
+  .hover_accordion_active {
+    margin-top: 0.5rem;
+  }
+
+  .hover_accordion_content_active {
+    margin-bottom: 0.5rem;
+  }
   .tabsjs {
     display: flex;
     flex-direction: column;
@@ -1262,11 +1289,16 @@ time:nth-child(11) {
     width: 100%;
     margin-top: 1rem;
   }
-
+  .tabcontent {
+    min-height: auto;
+  }
   .tab_decsr p {
     font-size: 20px;
   }
-
+  .text p {
+    line-height: 14px;
+    margin-bottom: .5rem;
+  }
   .div-top > a {
     font-size: 13px;
     font-weight: bold;
@@ -1366,6 +1398,19 @@ time:nth-child(11) {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .accordeon-title {
+    flex-direction: row;
+    text-align-last: center;
+    text-align: center;
+  }
+  .accordeon-title:after {
+    /* width: 50%; */
+    height: 30px;
+    
+}
   .textarea {
     flex-direction: column;
   }
@@ -1432,7 +1477,7 @@ time:nth-child(11) {
     top: -30%;
   }
   .container_img_second {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
   .div-top {
     visibility: hidden;
@@ -1584,7 +1629,21 @@ time:nth-child(11) {
     margin-top: 1rem;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 100px) and (max-device-width: 480px) {
+  .accordeon-title {
+    padding: 0.1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordeon-title::after{
+    width: 50%;
+    border-radius: 10px;
+    margin-top: .5rem;
+  }
+  .hover_accordion_active {
+   
+  }
   .absolute_become_container {
     width: 97%;
   }
